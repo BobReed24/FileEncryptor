@@ -46,9 +46,10 @@ public class FileEncryptor {
 
             char encryptedChar = (char) (c + 5);  
             encryptedChar = (char) (encryptedChar ^ key);  
+
             encrypted.append(encryptedChar);
         }
-        return encrypted.toString();
+        return encrypted.toString();  
     }
 
     private static String customDecrypt(String input) {
@@ -61,6 +62,6 @@ public class FileEncryptor {
             decryptedChar = (char) (decryptedChar - 5);  
             decrypted.append(decryptedChar);
         }
-        return decrypted.toString();
+        return decrypted.toString();  
     }
 }

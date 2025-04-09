@@ -24,3 +24,11 @@ java {
 application {
     mainClass = 'com.FileEncryptor.FileEncryptor'
 }
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.FileEncryptor.FileEncryptor'  
+        )
+    }
+}
