@@ -24,12 +24,28 @@ A simple Java-based file encryption tool that encrypts and decrypts files using 
 
 3. **Run the program**:
   - To encrypt a file:
+    Linux
     ```bash
-    java -cp build/classes/java/main com.FileEncryptor.FileEncryptor encrypt input.txt encrypted.txt
+    ./run-linux encrypt exampleinput.txt exampleoutput.txt
+    ```
+    Windows
+    ```bash
+    Start-Process "run-windows.bat" encrypt exampleinput.txt exampleoutput.txt
     ```
   - To decrypt a file:
+    Linux
     ```bash
-    java -cp build/classes/java/main com.FileEncryptor.FileEncryptor decrypt encrypted.txt decrypted.txt
+    ./run-decrypt decrypt exampleoutput.txt exampledecrypted.txt
+    ```
+    Windows
+    ```bash
+    Start-Process "run-windows.bat" decrypt exampleoutput.txt exampledecrypted.txt
+    ```
+
+4. **Extracting the jar**:
+  - This is very easy just run:
+    ```bash
+    cp app/build/libs/app-1.0.jar .
     ```
 
 ## How It Works

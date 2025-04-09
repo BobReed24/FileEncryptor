@@ -1,0 +1,2 @@
+#!/bin/bash
+zulu17-linux/bin/java -jar app/build/libs/app-1.0.jar "$@"
