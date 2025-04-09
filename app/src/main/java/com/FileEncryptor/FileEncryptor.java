@@ -38,29 +38,27 @@ public class FileEncryptor {
         System.out.println("Decrypted to: " + outputPath);
     }
 
-    // Custom encryption with human-readable characters
     private static String customEncrypt(String input) {
         StringBuilder encrypted = new StringBuilder();
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            int key = (31 + (i * 17)) % 256;  // Dynamic key
-            // Shift the character and XOR with the key
-            char encryptedChar = (char) (c + 5);  // Shift character
-            encryptedChar = (char) (encryptedChar ^ key);  // XOR with key
+            int key = (31 + (i * 17)) % 256;  
+
+            char encryptedChar = (char) (c + 5);  
+            encryptedChar = (char) (encryptedChar ^ key);  
             encrypted.append(encryptedChar);
         }
         return encrypted.toString();
     }
 
-    // Custom decryption to reverse the encrypt method
     private static String customDecrypt(String input) {
         StringBuilder decrypted = new StringBuilder();
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            int key = (31 + (i * 17)) % 256;  // Same dynamic key
-            // Reverse the XOR with the key
-            char decryptedChar = (char) (c ^ key);  // XOR with key
-            decryptedChar = (char) (decryptedChar - 5);  // Undo character shift
+            int key = (31 + (i * 17)) % 256;  
+
+            char decryptedChar = (char) (c ^ key);  
+            decryptedChar = (char) (decryptedChar - 5);  
             decrypted.append(decryptedChar);
         }
         return decrypted.toString();
