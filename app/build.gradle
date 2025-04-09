@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.FileEncryptor'
+version = '1.0'
+
+repositories {
+
+    mavenCentral()
+}
+
+dependencies {
+    implementation libs.guava
+}
+
+testing {
+    suites {
+        test {
+            useJUnit('4.13.2')
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    mainClass = 'com.FileEncryptor.FileEncryptor'
+}
