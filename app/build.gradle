@@ -15,14 +15,6 @@ dependencies {
     implementation libs.guava
 }
 
-testing {
-    suites {
-        test {
-            useJUnit('4.13.2')
-        }
-    }
-}
-
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
