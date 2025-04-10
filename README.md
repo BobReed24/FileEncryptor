@@ -38,7 +38,7 @@ A simple Java-based file encryption tool that encrypts and decrypts files using 
 4. **Extracting the jar**:
   - This is very easy just run:
     ```bash
-    cp app/build/libs/FileEncryptor-1.0.jar .
+    cp build/libs/FileEncryptor-1.0.jar .
     ```
 
 ## How It Works
