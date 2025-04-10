@@ -1,1 +1,0 @@
-zulu17-windows/bin/java.exe -jar app/build/libs/app-1.0.jar %*

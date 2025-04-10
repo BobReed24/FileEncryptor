@@ -8,6 +8,9 @@ A simple Java-based file encryption tool that encrypts and decrypts files using 
 - **Encrypt/Decrypt Text Files**: Encrypts and decrypts files with human-readable content.
 - **Cross-Platform**: Should work on any platform with Java installed.
 
+## Dependencies
+  - JDK 17
+
 ---
 
 ## Getting Started
@@ -24,22 +27,12 @@ A simple Java-based file encryption tool that encrypts and decrypts files using 
 
 3. **Run the program**:
   - To encrypt a file:
-    Linux
     ```bash
-    ./run-linux encrypt exampleinput.txt exampleoutput.txt
-    ```
-    Windows
-    ```bash
-    Start-Process "run-windows.bat" encrypt exampleinput.txt exampleoutput.txt
+    ./gradlew --args="encrypt exampleinput.txt exampleoutput.txt"
     ```
   - To decrypt a file:
-    Linux
     ```bash
-    ./run-decrypt decrypt exampleoutput.txt exampledecrypted.txt
-    ```
-    Windows
-    ```bash
-    Start-Process "run-windows.bat" decrypt exampleoutput.txt exampledecrypted.txt
+    ./gradlew --args="decrypt exampleoutput.txt exampledecrypted.txt"
     ```
 
 4. **Extracting the jar**:
