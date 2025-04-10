@@ -1,2 +1,0 @@
-zulu17-linux/lib/modules filter=lfs diff=lfs merge=lfs -text
-zulu17-windows/lib/modules filter=lfs diff=lfs merge=lfs -text
